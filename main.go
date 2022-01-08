@@ -11,7 +11,7 @@ type triangle struct {
 	height float64
 }
 type square struct {
-	side float64
+	sideLength float64
 }
 
 func main() {
@@ -21,7 +21,7 @@ func main() {
 	}
 
 	s1 := square{
-		side: 30,
+		sideLength: 30,
 	}
 
 	printArea(t1)
@@ -38,5 +38,5 @@ func (t triangle) getArea() float64 {
 }
 
 func (s square) getArea() float64 {
-	return s.side * s.side
+	return s.sideLength * s.sideLength
 }
